@@ -1,0 +1,163 @@
+.tabs {
+  &__controls {
+
+    display: none;
+    margin: 0;
+    padding: 0;
+    @include for-tablet-landscape-up {
+      display: flex;
+    }
+
+    .tabs__item {
+      display: inline-block;
+      width: auto;
+
+      @include for-tablet-landscape-up {
+        display: flex;
+        flex-direction: row;
+        width: 25%;
+      }
+    }
+  }
+
+  &__section {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+
+    .tabs__item {
+      .tabs__title {
+
+        @include for-tablet-landscape-up {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__item {
+    display: block;
+    width: 100%;
+
+
+    .tabs__title {
+      background: $tabs-bg;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      padding: rem-calc(21 25);
+      transition: 0.3s ease;
+      width: 100%;
+      align-items: center;
+
+      @include for-tablet-landscape-up {
+        flex-direction: column;
+        background: $white-color;
+        padding: 0;
+        padding-bottom: rem-calc(20);
+        border-bottom: rem-calc(2) solid transparent;
+
+      }
+
+      span {
+        font-size: rem-calc(16);
+        font-weight: 400;
+
+        @include for-tablet-landscape-up {
+          font-size: rem-calc(22);
+          line-height: 2;
+          display: inline-block;
+        }
+
+      }
+
+      &:hover, &.is-active {
+        color: $primary-color;
+        @include for-tablet-landscape-up {
+          border-bottom: rem-calc(2) solid $primary-color;
+        }
+      }
+
+      &:hover .tabs__icon {
+        filter: invert(78%) sepia(5%) saturate(4127%) hue-rotate(38deg) brightness(93%) contrast(101%);
+      }
+
+      &.is-active .tabs__icon {
+        filter: invert(78%) sepia(5%) saturate(4127%) hue-rotate(38deg) brightness(93%) contrast(101%);
+      }
+    }
+  }
+
+  &__content {
+    box-sizing: border-box;
+    display: none;
+    height: 0;
+    left: 0;
+    opacity: 0;
+    padding: 0 2rem;
+    position: relative;
+    transition: 0.4s ease;
+    visibility: hidden;
+    width: 100%;
+
+    p {
+      font-size: rem-calc(18);
+      color: $text-color;
+
+    }
+
+    ul {
+      li {
+        color: $text-color;
+        margin-bottom: rem-calc(20);
+        font-size: rem-calc(18);
+        list-style: none;
+        position: relative;
+
+        &:before {
+          content: url("/images/checkmark.svg");
+          display: block;
+          width: rem-calc(28);
+          height: rem-calc(20);
+          position: absolute;
+          top: 0;
+          left: rem-calc(-40);
+
+        }
+      }
+    }
+
+    &.is-active {
+      display: block;
+      height: auto;
+      opacity: 1;
+      padding: rem-calc(16 5);
+      visibility: visible;
+      @include for-tablet-landscape-up {
+        padding: rem-calc(80 16 40 200);
+
+      }
+    }
+  }
+
+  &__icon {
+    width: rem-calc(40);
+    height: auto;
+    margin-right: rem-calc(20);
+    filter: invert(22%) sepia(3%) saturate(17%) hue-rotate(23deg) brightness(96%) contrast(77%);
+    transition: 0.4s ease;
+    @include for-tablet-landscape-up {
+
+      width: rem-calc(72);
+      margin-bottom: rem-calc(25);
+
+
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,105 @@
+.specialists {
+  padding-top: rem-calc(54);
+
+  @include for-tablet-landscape-up{
+    padding-top: rem-calc(84);
+    padding-bottom: rem-calc(69);
+  }
+
+  &__headline {
+    font-size: rem-calc(24);
+    line-height: 2;
+    color: $text-color;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: rem-calc(32);
+    @include for-tablet-landscape-up{
+      font-size: rem-calc(32);
+    }
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: rem-calc(181);
+      height: rem-calc(2);
+      bottom: rem-calc(-10);
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      background: $grey;
+    }
+
+    span {
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto rem-calc(64);
+    @include for-tablet-landscape-up{
+      max-width: 70%;
+      margin-bottom: rem-calc(35);
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include for-tablet-landscape-up {
+      flex-direction: row;
+    }
+
+  }
+
+  &__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: rem-calc(32);
+
+    @include for-tablet-landscape-up {
+      width: 50%;
+    }
+    @include for-desktop-up {
+      width: 25%;
+    }
+  }
+
+  &__image {
+    box-shadow: rem-calc(10 13) 0 transparentize($light-grey, .82);
+    margin-bottom: rem-calc(42);
+  }
+
+  &__details {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  &__person {
+    text-align: center;
+    font-size: rem-calc(22);
+    line-height: rem-calc(44);
+    font-weight: normal;
+    span {
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+
+  &__position {
+    text-align: center;
+    font-size: rem-calc(16);
+    font-weight: normal;
+  }
+}

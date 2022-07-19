@@ -1,0 +1,12 @@
+.container {
+    max-width: rem-calc(1230);
+    padding-left: rem-calc(25);
+    padding-right: rem-calc(25);
+    margin-right: auto;
+    margin-left: auto;
+    @include for-tablet-landscape-up {
+        padding-left: rem-calc(25);
+        padding-right: rem-calc(25);
+
+    }
+}

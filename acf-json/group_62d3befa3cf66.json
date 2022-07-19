@@ -1,0 +1,332 @@
+{
+    "key": "group_62d3befa3cf66",
+    "title": "Footer Options",
+    "fields": [
+        {
+            "key": "field_62d3bf04dc5a9",
+            "label": "Footer Logo",
+            "name": "footer_logo",
+            "type": "image",
+            "instructions": "Upload footer logo",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_62d3bfb2d71dd",
+            "label": "Footer column one",
+            "name": "footer_col_1",
+            "type": "group",
+            "instructions": "Options for the first group in footer",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_62d3c02bd71de",
+                    "label": "Column title",
+                    "name": "column_title",
+                    "type": "text",
+                    "instructions": "Fill in a title for the first column",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "O nas",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62d3c3600baad",
+                    "label": "Column description",
+                    "name": "column_description",
+                    "type": "text",
+                    "instructions": "Fill in a description for the first column",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "PoliLab Laboratoium Protetyczne",
+                    "placeholder": "PoliLab Laboratoium Protetyczne",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_62d3c95e19c62",
+            "label": "Footer column two",
+            "name": "footer_col_2",
+            "type": "group",
+            "instructions": "Options for the second group in footer",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_62d3c95e19c63",
+                    "label": "Column title",
+                    "name": "column_title_two",
+                    "type": "text",
+                    "instructions": "Fill in a title for the second column",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Adres",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62d3c95e19c64",
+                    "label": "Column description",
+                    "name": "column_description_two",
+                    "type": "text",
+                    "instructions": "Fill in a description for the second column",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "ul. Piwna 17B, 50-353 Wrocław",
+                    "placeholder": "ul. Piwna 17B, 50-353 Wrocław",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62d3c9ca19c65",
+                    "label": "Phone number",
+                    "name": "phone_number",
+                    "type": "number",
+                    "instructions": "Fill in phone number field",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_62d42fa1ae7d5",
+                    "label": "Phone number label",
+                    "name": "phone_number_label",
+                    "type": "text",
+                    "instructions": "Fill in phone number label for front",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_62d3ca091f92c",
+            "label": "Footer column three",
+            "name": "footer_col_3",
+            "type": "group",
+            "instructions": "Options for the third group in footer",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_62d3ca091f92d",
+                    "label": "Column title",
+                    "name": "column_title_three",
+                    "type": "text",
+                    "instructions": "Fill in a title for the third column",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Godziny otwarcia",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62d3ca091f92e",
+                    "label": "Column description",
+                    "name": "column_description_three",
+                    "type": "text",
+                    "instructions": "Fill in a description for the second column",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Poniedziałek - Piątek: 8:00 - 18:00 Sobota-Niedziela: nieczynne",
+                    "placeholder": "Poniedziałek - Piątek: 8:00 - 18:00 Sobota-Niedziela: nieczynne",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_62d3ca601f930",
+            "label": "Footer column four",
+            "name": "footer_col_4",
+            "type": "group",
+            "instructions": "Options for the forth group in footer",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_62d3ca601f931",
+                    "label": "Column title",
+                    "name": "column_title_four",
+                    "type": "text",
+                    "instructions": "Fill in a title for the fourth column",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Social media",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62d3ca601f932",
+                    "label": "Social link",
+                    "name": "social_link",
+                    "type": "text",
+                    "instructions": "Paste social link",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "facebook.com",
+                    "placeholder": "facebook.com",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62d3cad61f933",
+                    "label": "Social link icon",
+                    "name": "social_link_icon",
+                    "type": "image",
+                    "instructions": "Upload social icon",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-options-footer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1658073579
+}

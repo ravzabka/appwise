@@ -1,0 +1,38 @@
+.header {
+  height: rem-calc(484);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 66% center;
+  @include for-tablet-landscape-up {
+    height: rem-calc(768);
+    background-position: 50% center;
+  }
+
+  &__container {
+    position: relative;
+    height: 100%;
+    padding-right: 0;
+    padding-left: 0;
+
+    @include for-tablet-landscape-up {
+      padding-left: rem-calc(31);
+      padding-right: rem-calc(31);
+    }
+  }
+
+  &__logo {
+    width: rem-calc(120);
+    height: auto;
+
+    @include for-tablet-landscape-up {
+      width: rem-calc(180);
+    }
+  }
+
+  &__menu {
+    padding-top: rem-calc(44);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

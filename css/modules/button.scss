@@ -1,0 +1,15 @@
+.button {
+  display: inline-block;
+  border: rem-calc(2) solid $primary-color;
+  font-size: rem-calc(16);
+  font-weight: 400;
+  text-decoration: none;
+  color: $primary-color;
+  padding: rem-calc(16 50);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $primary-color;
+    color: $white-color;
+  }
+}

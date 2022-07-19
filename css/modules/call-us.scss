@@ -1,0 +1,51 @@
+.call-us {
+  height: rem-calc(218);
+  display: flex;
+  background-color: $primary-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  &__headline {
+    color: $white-color;
+    line-height: 1;
+
+    @include for-tablet-landscape-up {
+      font-size: rem-calc(32);
+    }
+  }
+
+  &__link {
+    font-size: rem-calc(24);
+    font-weight: 700;
+    line-height: 1;
+    color: $white-color;
+    text-decoration: none;
+    border: rem-calc(2) solid $white-color;
+    text-align: center;
+    display: inline;
+    min-width: rem-calc(204);
+    margin: 0 auto;
+    padding: rem-calc(11 31);
+    transition: all .3s ease-in-out;
+
+    @include for-tablet-landscape-up {
+      min-width: rem-calc(247);
+      padding: rem-calc(11 31);
+    }
+
+    &:hover {
+      color: $primary-color;
+      border: rem-calc(2) solid $white-color;
+      background-color: $white-color;
+    }
+  }
+}

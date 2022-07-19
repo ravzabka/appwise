@@ -1,0 +1,73 @@
+.footer {
+  padding: rem-calc(41) 0;
+  background-color: $white-color;
+
+  &__logo {
+    width: rem-calc(180);
+    height: auto;
+    align-self: center;
+
+    @include for-desktop-up {
+      margin-right: rem-calc(121);
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__col-headline {
+    color: $primary-color;
+    font-size: rem-calc(16);
+    font-weight: bold;
+    margin-bottom: rem-calc(10);
+  }
+
+  &__col-description {
+    max-width: rem-calc(160);
+    color: $light-grey-text;
+    line-height: 1.4;
+    margin: 0;
+
+    &--social {
+      padding-left: rem-calc(35);
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem-calc(32);
+
+    @include for-desktop-up {
+      width: 28%;
+      justify-content: flex-start;
+    }
+  }
+
+  &__col {
+    width: 50%;
+    margin-bottom: rem-calc(32);
+
+    @include for-desktop-up {
+      width: 18%;
+    }
+
+    a {
+      text-decoration: none;
+      color: $light-grey-text;
+      display: inline-block;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

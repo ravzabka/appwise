@@ -1,0 +1,35 @@
+.headline {
+  font-size: rem-calc(24);
+  line-height: 2;
+  color: $text-color;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: rem-calc(32);
+
+  @include for-tablet-landscape-up {
+    font-size: rem-calc(32);
+  }
+
+  span {
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  &--underline {
+    @include for-tablet-landscape-up {
+      &::after {
+        content: "";
+        position: absolute;
+        width: rem-calc(181);
+        height: rem-calc(2);
+        bottom: rem-calc(-10);
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        background: $grey;
+      }
+    }
+  }
+}

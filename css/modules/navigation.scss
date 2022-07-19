@@ -1,0 +1,190 @@
+.navigation {
+
+    @include for-tablet-landscape-up {
+      display: flex;
+      padding-top: rem-calc(47);
+      justify-content: space-between;
+    }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  &__item {
+    padding: rem-calc(10);
+
+    @include for-tablet-landscape-up {
+      margin-left: rem-calc(42);
+      padding: rem-calc(10) 0;
+
+    }
+    @include for-desktop-up {
+      margin-left: rem-calc(69);
+      padding: rem-calc(10) 0;
+
+    }
+
+    a {
+      text-decoration: none;
+      padding-top: rem-calc(10);
+      padding-bottom: rem-calc(10);
+      color: $text-color;
+      font-weight: 400;
+      transition: all 0.3s ease;
+      position: relative;
+
+      @include for-tablet-landscape-up {
+        &:after {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: rem-calc(0);
+          margin-left: auto;
+          margin-right: auto;
+          content: "";
+          width: 72%;
+          height: rem-calc(2);
+          background-color: $primary-color;
+          opacity: 0;
+          transition: all .3s ease-in-out;
+        }
+        &:hover:after {
+          bottom: rem-calc(-4);
+          opacity: 1;
+
+        }
+      }
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  @include for-tablet-landscape-up {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+
+.logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: rem-calc(60);
+
+  @include for-tablet-landscape-up {
+    padding-top: 0;
+    width: auto;
+  }
+}
+
+.hamburger div {
+  width: rem-calc(30);
+  height: rem-calc(3);
+  background: $grey;
+  margin: rem-calc(5);
+  transition: all 0.3s ease;
+}
+
+.hamburger {
+  display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 990px) {
+  nav {
+    z-index: 9;
+    display: flex;
+    margin: 0;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    left: rem-calc(31);
+    top: rem-calc(67);
+    transform: translate(-5%, -50%);
+    z-index: 99;
+    transition: all 0.7s ease;
+  }
+
+  .hamburger.toggle {
+    position: fixed;
+  }
+  .nav-links {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background: $white-color;
+    height: 100vh;
+    width: 100%;
+    padding-left: 0;
+    flex-direction: column;
+    clip-path: circle(50px at 90% -20%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    justify-content: space-evenly;
+  }
+  .nav-links.open {
+    clip-path: circle(1380px at 90% -10%);
+    -webkit-clip-path: circle(1380px at 90% -10%);
+    pointer-events: all;
+    z-index: 9;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.7s;
+  }
+  .nav-links li:nth-child(5) {
+    transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(6) {
+    transition: all 0.5s ease 0.9s;
+    margin: 0;
+  }
+  .nav-links li:nth-child(7) {
+    transition: all 0.5s ease 1s;
+    margin: 0;
+  }
+  li.fade {
+    opacity: 1;
+  }
+}
+
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  transition: all 0.7s ease;
+  width: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

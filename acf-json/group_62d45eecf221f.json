@@ -1,0 +1,64 @@
+{
+    "key": "group_62d45eecf221f",
+    "title": "Specialists options",
+    "fields": [
+        {
+            "key": "field_62d45efaada4a",
+            "label": "Specialist name",
+            "name": "specialist_name",
+            "type": "text",
+            "instructions": "Write name for specialist",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62d45f14ada4b",
+            "label": "Specialist position",
+            "name": "specialist_position",
+            "type": "text",
+            "instructions": "Write specialist position",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "specialist"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1658085177
+}

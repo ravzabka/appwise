@@ -1,0 +1,69 @@
+.hero {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-top: rem-calc(32);
+  padding-bottom: rem-calc(48);
+  background-color: transparentize($white-color, .61);
+
+  @include for-tablet-landscape-up {
+    position: relative;
+    background-color: transparent;
+    margin-top: rem-calc(209);
+    padding: 0;
+  }
+
+  &__headline {
+    font-size: rem-calc(26);
+    text-align: center;
+    line-height: rem-calc(64);
+
+    @include for-tablet-landscape-up {
+      font-size: rem-calc(42);
+      text-align: left;
+      line-height: rem-calc(64);
+    }
+
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-size: rem-calc(16);
+    text-align: center;
+
+    @include for-tablet-landscape-up {
+      margin-bottom: rem-calc(32);
+      text-align: left;
+    }
+  }
+
+  &__cta {
+    padding-top: rem-calc(32);
+    padding-bottom: rem-calc(32);
+    text-align: center;
+
+    @include for-desktop-up {
+      padding-top: 0;
+    }
+
+    &--desktop {
+      display: none;
+      @include for-tablet-landscape-up {
+        text-align: left;
+        display: block;
+        padding-top: 0;
+      }
+    }
+
+    &--mobile {
+      @include for-tablet-landscape-up {
+        display: none;
+      }
+    }
+  }
+}
